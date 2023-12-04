@@ -1,0 +1,165 @@
+﻿Build1=Default,pos.abdulcadree
+File1=about.bal
+File10=icons8_Invert_Selection_52px.png
+File11=icons8_Tune_64px.png
+File12=img2.jpg
+File13=inter-black.ttf
+File14=inter-bold.ttf
+File15=inter-extrabold.ttf
+File16=inter-extralight.ttf
+File17=inter-light.ttf
+File18=inter-medium.ttf
+File19=inter-regular.ttf
+File2=budget.bal
+File20=main.bal
+File21=overlay.bal
+File22=roboto-boldcondensed.ttf
+File23=roboto-condensed.ttf
+File24=roboto-medium.ttf
+File25=SavedUI.bal
+File26=Segoe UI.ttf
+File27=semBudte.png
+File28=TextingUI.bal
+File29=twitter-avi-gender-balanced-.jpg
+File3=CreatePost.bal
+File4=detailsdialog.bal
+File5=editbackgroundEffect.bal
+File6=editLayout.bal
+File7=icons8_Approval_24px.png
+File8=icons8_Device_Information_50px.png
+File9=icons8_Full_Image_64px.png
+FileGroup1=Layouts
+FileGroup10=buttonIcos
+FileGroup11=buttonIcos
+FileGroup12=img
+FileGroup13=Fonts
+FileGroup14=Fonts
+FileGroup15=Fonts
+FileGroup16=Fonts
+FileGroup17=Fonts
+FileGroup18=Fonts
+FileGroup19=Fonts
+FileGroup2=Layouts
+FileGroup20=Layouts
+FileGroup21=Layouts
+FileGroup22=Fonts
+FileGroup23=Fonts
+FileGroup24=Fonts
+FileGroup25=Layouts
+FileGroup26=Fonts
+FileGroup27=img
+FileGroup28=Layouts
+FileGroup29=img
+FileGroup3=Layouts
+FileGroup4=Layouts
+FileGroup5=Layouts
+FileGroup6=Layouts
+FileGroup7=buttonIcos
+FileGroup8=buttonIcos
+FileGroup9=buttonIcos
+Group=Default Group
+Library1=appcompat
+Library10=runtimepermissions
+Library11=stringutils
+Library12=xresizeandcrop
+Library13=xui views
+Library2=as_tabmenuadvanced
+Library3=b4xbitmapeffects
+Library4=b4xpages
+Library5=core
+Library6=dialogs
+Library7=fileprovider
+Library8=phone
+Library9=reflection
+ManifestCode=AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="30"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~SetApplicationAttribute(android:requestLegacyExternalStorage,true)~\n~SetApplicationAttribute(android:usesCleartextTraffic, "true")~\n~SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~CreateResource(values, theme.xml,~\n~<resources>~\n~		<style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">~\n~		<item name="android:windowLightStatusBar">false</item>~\n~		<item name="android:windowLightNavigationBar">false</item>~\n~		<item name="windowNoTitle">false</item>~\n~		<item name="windowActionBar">false</item>~\n~		<item name="windowActionModeOverlay">false</item>~\n~		<item name="colorPrimary">#ffffff</item>~\n~		<item name="android:navigationBarColor">#17212D</item>			~\n~		<item name="android:statusBarColor">#17212D</item>	~\n~		<item name="colorPrimaryDark">#17212D</item>~\n~		<item name="colorAccent">#17212D</item>~\n~		<item name="android:textColorHint">#8B5CF6</item>~\n~		<item name="android:windowTranslucentNavigation">false</item>~\n~		<item name="android:windowTranslucentStatus">false</item>~\n~		<item name="android:forceDarkAllowed">false</item>~\n~		</style>~\n~</resources>~\n~)~\n~~\n~AddManifestText(<uses-permission~\n~	android:name="android.permission.WRITE_EXTERNAL_STORAGE"~\n~	android:maxSdkVersion="18" />~\n~)~\n~~\n~AddApplicationText(~\n~  <provider~\n~  android:name="android.support.v4.content.FileProvider"~\n~  android:authorities="$PACKAGE$.provider"~\n~  android:exported="false"~\n~  android:grantUriPermissions="true">~\n~  <meta-data~\n~  android:name="android.support.FILE_PROVIDER_PATHS"~\n~  android:resource="@xml/provider_paths"/>~\n~  </provider>~\n~)~\n~CreateResource(xml, provider_paths,~\n~   <files-path name="name" path="shared" />~\n~)~\n~
+Module1=B4XMainPage
+Module2=create
+Module3=EditBackgroundPicture
+Module4=editProfilePicture
+Module5=saved
+Module6=Utilities
+Module7=ViewPos
+NumberOfFiles=29
+NumberOfLibraries=13
+NumberOfModules=7
+Version=11.8
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: AC Post Creator
+	#VersionCode: 1
+	#VersionName: 
+	#SupportedOrientations: portrait
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: false
+#End Region
+
+#BridgeLogger: True
+
+Sub Process_Globals
+	Public ActionBarHomeClicked As Boolean
+End Sub
+
+Sub Globals
+'	Public Drawer As B4XDrawer
+End Sub
+
+ 
+'Private Sub Activity_PermissionResult (Permission As String, Result As Boolean)
+'	B4XPages.Delegate.Activity_PermissionResult(Permission , Result )
+'End Sub
+
+
+Sub Activity_Create(FirstTime As Boolean)
+	Dim pm As B4XPagesManager
+	pm.Initialize(Activity)
+	Dim r As RuntimePermissions
+	r.CheckAndRequest(r.PERMISSION_WRITE_EXTERNAL_STORAGE)
+	r.CheckAndRequest(r.PERMISSION_READ_EXTERNAL_STORAGE)
+End Sub
+
+'Template version: B4A-1.01
+#Region Delegates
+
+Sub Activity_ActionBarHomeClick
+	ActionBarHomeClicked = True
+	B4XPages.Delegate.Activity_ActionBarHomeClick
+	ActionBarHomeClicked = False
+End Sub
+
+Sub Activity_KeyPress (KeyCode As Int) As Boolean
+	'Log	(KeyCode )
+	
+	'Drawer.LeftOpen = Not(Drawer.LeftOpen)
+	Return B4XPages.Delegate.Activity_KeyPress(KeyCode)
+End Sub
+
+Sub Activity_Resume
+	B4XPages.Delegate.Activity_Resume
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	B4XPages.Delegate.Activity_Pause
+End Sub
+
+Sub Activity_PermissionResult (Permission As String, Result As Boolean)
+	B4XPages.Delegate.Activity_PermissionResult(Permission, Result)
+End Sub
+
+Sub Create_Menu (Menu As Object)
+	B4XPages.Delegate.Create_Menu(Menu)
+End Sub
+
+#if Java
+public boolean _onCreateOptionsMenu(android.view.Menu menu) {
+	 processBA.raiseEvent(null, "create_menu", menu);
+	 return true;
+	
+}
+#End If
+#End Region
+
+'Program code should go into B4XMainPage and other pages.

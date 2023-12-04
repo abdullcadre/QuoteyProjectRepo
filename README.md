@@ -1,52 +1,52 @@
-# Quotey App Repository
+# Repositório do App Quotey
 
 [![Quotey Logo](images/quotey-logo.png)](https://play.google.com/store/apps/details?id=com.abdullcade.Quotey)
 
-## Introduction
+## Introdução
 
-Welcome to the Quotey App repository! Quotey is a powerful tool for creating and sharing inspirational quotes. This repository contains the source code and provides a space for collaboration and community contribution.
+Bem-vindo ao repositório do Quotey App! Quotey é uma poderosa ferramenta para criar e partilhar citações inspiradoras. Este repositório contém o código-fonte e proporciona um espaço para colaboração e contribuição da comunidade.
 
-## Features
+## Funcionalidades
 
-- Create beautiful and inspiring quotes.
-- Share quotes easily on various platforms.
-- Customize fonts, styles, and layouts.
+- Crie citações bonitas e inspiradoras.
+- Partilhe citações facilmente em várias plataformas.
+- Personalize fontes, estilos e layouts.
 
-## Getting Started
+## Como Começar
 
-To get started with the Quotey app development, follow these steps:
+Para começar com o desenvolvimento do app Quotey, siga estes passos:
 
-1. **Clone the Repository:**
+1. **Clone o Repositório:**
    ```bash
-   git clone https://github.com/your-username/QuoteyApp.git
+   git clone https://github.com/seu-utilizador/QuoteyApp.git
    ```
 
-2. **Navigate to the Project Folder:**
+2. **Vá até a Pasta do Projeto:**
    ```bash
    cd QuoteyApp
    ```
 
-3. **Explore the Code:**
-   Browse through the source code to understand the app's structure.
+3. **Explore o Código:**
+   Navegue pelo código-fonte para entender a estrutura do app.
 
-4. **Contribute:**
-   If you'd like to contribute, check out the [Contributing Guidelines](CONTRIBUTING.md) for more information.
+4. **Contribua:**
+   Se deseja contribuir, consulte as [Diretrizes de Contribuição](CONTRIBUTING.md) para mais informações.
 
-## Screenshots
+## Capturas de Ecrã
 
-Include some screenshots or visual representations of your app here. You can find them in the `images` folder.
+Inclua algumas capturas de ecrã ou representações visuais do seu app aqui. Pode encontrá-las na pasta `images`.
 
-![Screenshot 1](images/screenshot1.png)
-![Screenshot 2](images/screenshot2.png)
+![Captura de Ecrã 1](images/screenshot1.png)
+![Captura de Ecrã 2](images/screenshot2.png)
 
-## Download Quotey
+## Baixe o Quotey
 
-[![Download on Google Play](images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.abdullcade.Quotey)
+[![Baixe na Google Play](images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.abdullcade.Quotey)
 
-## License
+## Licença
 
-This project is licensed under the [MIT License](LICENSE).
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
-## Acknowledgements
+## Agradecimentos
 
-Special thanks to all contributors who help make Quotey better!
+Agradecimentos especiais a todos os contribuidores que ajudam a tornar o Quotey ainda melhor!

@@ -34,10 +34,9 @@ Para começar com o desenvolvimento do app Quotey, siga estes passos:
 
 ## Capturas de Ecrã
 
-Inclua algumas capturas de ecrã ou representações visuais do seu app aqui. Pode encontrá-las na pasta `images`.
+Inclua algumas capturas de ecrã ou representações visuais do seu app aqui.
 
-![Captura de Ecrã 1](images/screenshot1.png)
-![Captura de Ecrã 2](images/screenshot2.png)
+![Captura de Ecrã 1](Picsart_22-11-10_12-08-14-105[1].jpg)
 
 ## Baixe o Quotey
 
